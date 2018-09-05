@@ -12,8 +12,8 @@ server.on('request', function (request, response) {
             response.end();
         });
     } else {
-        fs.readFile('404.html', function(error, content) {
-            response.writeHead(200, {'Content-type':'text/html'});
+        fs.readFile('404-error.jpg', function(error, content) {
+            response.writeHead(200, {'Content-type':'image/jpeg'});
             response.write(content);
             response.end();
         });
